@@ -3,7 +3,10 @@ const { I } = inject();
 class MainPage {
     constructor() {
         this.locator = {
-            signIn: '(//a[contains(text(), "Sign in")])[2]'
+            signIn: 'img[src="https://todo.ly/Images/design/pagelogin.png"]',
+            email: 'ctl00_MainContent_LoginControl1_TextBoxEmail',
+            password: '#ctl00_MainContent_LoginControl1_TextBoxPassword',
+            loginButton: '#ctl00_MainContent_LoginControl1_ButtonLogin'
         };
     }
 
