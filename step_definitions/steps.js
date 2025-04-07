@@ -22,7 +22,7 @@ When(/^I try to login in main page$/, function () {
     I.wait(2);
     I.click(main_page.signIn);
     I.fillField(main_page.locator.email, 'test@testing65.com');
-    I.fillField(main_page.locator.email, '12345');
+    I.fillField(main_page.locator.password, '12345');
     I.click(main_page.locator.loginButton);
     I.wait(4);
 });
